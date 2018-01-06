@@ -1,0 +1,40 @@
+article {
+  background-color: #ff29d1;
+  background-size: cover;
+  background: url("~/assets/images/map.png") no-repeat center center fixed;
+  min-height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 1;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 41, 209, 0.5);
+    margin: 20px;
+    padding: 40px;
+
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      text-align: center;
+      color: #fbecff;
+      font-size: 48px;
+      font-family: Lato sans-serif;
+      font-weight: bold;
+    }
+    .address {
+      color: #000;
+      font-size: 24px;
+      font-family: Lato sans-serif;
+      text-align: center;
+    }
+  }
+}

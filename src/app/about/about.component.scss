@@ -1,0 +1,43 @@
+article {
+  background-color: #ff29d1;
+  background-size: cover;
+  background: url("~/assets/images/fashion-girl-hair-style-laying-1080P-wallpaper.jpg") no-repeat center center fixed;
+  min-height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 1;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: #fff;
+      font-size: 48px;
+      font-family: Lato sans-serif;
+      font-weight: bold;
+    }
+
+    .description {
+      //background: rgba(255, 41, 209, 0.2);
+      background: rgba(255, 255, 255, 0.3);
+      color: #000;
+      font-size: 24px;
+      font-family: Lato sans-serif;
+      text-align: center;
+      margin: 20px 200px 150px;
+      padding: 40px 150px;
+
+      hr {
+        height: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        background: rgba(255, 255, 255, 0.07);
+      }
+    }
+  }
+}

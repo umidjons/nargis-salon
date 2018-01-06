@@ -1,0 +1,60 @@
+article {
+  background-color: #7b3eff;
+  background-size: cover;
+  background: url("~/assets/images/6924015-style-beautiful-hair-girl-photo.jpg") no-repeat center center fixed;
+  min-height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 1;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h3 {
+      color: #fff;
+      font-size: 48px;
+      font-family: Lato sans-serif;
+      font-weight: bold;
+    }
+
+    .description-wrapper {
+      display: flex;
+      align-self: stretch;
+      justify-content: center;
+      flex-wrap: wrap;
+      .description {
+        box-sizing: border-box;
+        margin: 20px;
+        background: rgba(255, 0, 241, 0.2);
+        font-size: 24px;
+        font-family: Lato sans-serif;
+        width: 28%;
+        display: flex;
+        .img {
+          background: rgba(255, 255, 255, 0.5);
+          padding: 20px;
+          img {
+            width: 130px;
+            height: 130px;
+          }
+        }
+        .body {
+          color: #fff;
+          padding: 0 20px;
+          h4 {
+            color: #ff93b7;
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+
+  }
+}
