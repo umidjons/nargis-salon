@@ -1,7 +1,7 @@
 article {
   background-color: #7b3eff;
   background-size: cover;
-  background: url("~/assets/images/pink-wp.jpg") no-repeat top center fixed;
+  background: url("~/assets/images/portfolio-full.jpg") no-repeat top center fixed;
   min-height: 400px;
   box-sizing: border-box;
   display: flex;
@@ -43,4 +43,32 @@ article {
     }
 
   }
+}
+
+@media(max-width: 576px) {
+  article {
+    background: url("~/assets/images/portfolio-700.jpg") repeat-y 0%/100% fixed;
+    min-height: 200px;
+
+    .content {
+      h3 {
+        font-size: 32px;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          width: 80%;
+          font-size: 24px;
+          margin: 10px;
+          padding: 20px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+
 }

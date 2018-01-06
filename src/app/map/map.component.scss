@@ -38,3 +38,22 @@ article {
     }
   }
 }
+
+@media(max-width: 576px) {
+  article {
+    background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
+    min-height: 200px;
+    .content {
+      margin: 40px 20px;
+      padding: 40px;
+
+      h3 {
+        font-size: 32px;
+      }
+      .address {
+        font-size: 18px;
+      }
+    }
+  }
+
+}

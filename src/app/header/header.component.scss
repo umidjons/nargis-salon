@@ -1,7 +1,6 @@
 header {
   background-size: cover;
   background: url("~/assets/images/red_lips_hair_hands_eyes_face_lips_woman_beauty_2560x1600.jpg") top center no-repeat fixed;
-  min-height: 900px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -16,7 +15,6 @@ header {
 
     .logo {
       color: #ff29d1;
-      font-size: 76px;
       font-family: Lato sans-serif;
       font-weight: bold;
     }
@@ -27,9 +25,45 @@ header {
       font-size: 24px;
       font-family: Lato sans-serif;
       text-align: center;
-      width: 70%;
-      padding: 40px;
-      margin-top: 40px;
     }
   }
 }
+
+@media(max-width: 576px) {
+  header {
+    background: url("~/assets/images/header-700.jpg") top center no-repeat fixed;
+    min-height: 420px;
+    .header-content {
+      padding: 20px;
+      .logo {
+        font-size: 48px;
+      }
+
+      .description {
+        font-size: 20px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    background: url("~/assets/images/header-2560.jpg") top center no-repeat fixed;
+    min-height: 900px;
+
+    .header-content {
+      .logo {
+        font-size: 76px;
+      }
+
+      .description {
+        width: 70%;
+        padding: 40px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
