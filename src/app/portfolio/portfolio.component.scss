@@ -53,11 +53,14 @@ article {
     .content {
       h3 {
         font-size: 32px;
+        text-shadow: 2px 2px 3px black;
       }
 
       .description-wrapper {
         margin-bottom: 40px;
         .description {
+          background: rgba(31, 1, 74, 0.5);
+          color: #fff;
           width: 80%;
           font-size: 24px;
           margin: 10px;

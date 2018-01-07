@@ -44,16 +44,20 @@ article {
 
 @media(max-width: 576px){
   article {
-    background: url("~/assets/images/about-700.jpg") repeat-y 0%/100% fixed;
+    background: url("~/assets/images/bg7.jpg") repeat-y 0%/100% fixed;
     min-height: 300px;
     .content {
       margin: 10px;
       h3 {
         font-size: 32px;
+        color: #fff;
+        text-shadow: 2px 2px 3px black;
       }
 
       .description {
-        font-size: 14px;
+        background: rgba(91, 0, 67, 0.75);
+        color: #fff;
+        font-size: 16px;
         margin: 10px;
         padding: 20px;
       }

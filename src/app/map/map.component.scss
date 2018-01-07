@@ -1,7 +1,7 @@
 article {
   background-color: #ff29d1;
   background-size: cover;
-  background: url("~/assets/images/map.png") no-repeat center center fixed;
+  background: url("~/assets/images/map-full.png") no-repeat center center fixed;
   min-height: 700px;
   box-sizing: border-box;
   display: flex;
@@ -15,7 +15,7 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 41, 209, 0.5);
+    background: rgba(255, 41, 209, 0.1);
     margin: 20px;
     padding: 40px;
 
@@ -25,7 +25,7 @@ article {
 
     h3 {
       text-align: center;
-      color: #fbecff;
+      color: #222;
       font-size: 48px;
       font-family: Lato sans-serif;
       font-weight: bold;
@@ -45,7 +45,7 @@ article {
     min-height: 200px;
     .content {
       margin: 40px 20px;
-      padding: 40px;
+      padding: 1px 20px;
 
       h3 {
         font-size: 32px;
