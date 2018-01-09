@@ -1,7 +1,7 @@
 article {
-  background-color: #ff29d1;
+  background-color: #ebebeb;
   background-size: cover;
-  background: url("~/assets/images/map-full.png") no-repeat center center fixed;
+  background: url("~/assets/images/map-full.png") repeat-x center center fixed;
   min-height: 700px;
   box-sizing: border-box;
   display: flex;
@@ -34,7 +34,7 @@ article {
       color: #000;
       font-size: 24px;
       font-family: Lato sans-serif;
-      text-align: center;
+      text-align: left;
     }
   }
 }
@@ -42,16 +42,24 @@ article {
 @media(max-width: 576px) {
   article {
     background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
-    min-height: 200px;
+    min-height: 300px;
     .content {
-      margin: 40px 20px;
-      padding: 1px 20px;
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
 
       h3 {
-        font-size: 32px;
+        font-size: 20px;
       }
       .address {
-        font-size: 18px;
+        font-size: 12px;
+        td {
+          vertical-align: top;
+          &:first-child {
+            text-align: right;
+            width: 100px;
+          }
+        }
       }
     }
   }
