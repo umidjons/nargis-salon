@@ -39,6 +39,33 @@ article {
   }
 }
 
+@media(max-width: 1200px) {
+  article {
+    background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
+    min-height: 400px;
+    .content {
+      width: 90%;
+      margin: 10px;
+      padding: 10px;
+
+      h3 {
+        font-size: 32px;
+      }
+      .address {
+        font-size: 16px;
+        td {
+          vertical-align: top;
+          &:first-child {
+            text-align: right;
+            width: 155px;
+          }
+        }
+      }
+    }
+    margin-bottom: 70px;
+  }
+}
+
 @media(max-width: 576px) {
   article {
     background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
@@ -63,5 +90,4 @@ article {
       }
     }
   }
-
 }

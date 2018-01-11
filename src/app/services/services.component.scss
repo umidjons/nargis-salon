@@ -59,19 +59,58 @@ article {
   }
 }
 
+@media (max-width: 1200px) {
+  article {
+    background: url("~/assets/images/bg8-700.jpg") repeat-y 0%/130% fixed;
+    min-height: 200px;
+
+    .content {
+      h3 {
+        font-size: 40px;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          background: rgba(255, 255, 255, 0.8);
+          margin: 10px;
+          font-size: 18px;
+          width: 47%;
+          .img {
+            background: rgba(255, 0, 219, 0.08);
+            padding: 10px;
+            img {
+              width: 90px;
+              height: 90px;
+            }
+          }
+          .body {
+            padding: 0 10px;
+            color: #000;
+            h4 {
+              color: #000;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
 @media (max-width: 576px) {
   article {
-    background: url("~/assets/images/bg6.jpg") repeat-y 0%/100% fixed;
+    background: url("~/assets/images/bg8-700.jpg") repeat-y 0%/130% fixed;
     min-height: 200px;
 
     .content {
       width: 100%;
-
       h3 {
         font-size: 32px;
         text-shadow: 2px 2px 3px black;
       }
-
       .description-wrapper {
         margin-bottom: 40px;
         .description {
@@ -98,7 +137,6 @@ article {
           }
         }
       }
-
     }
   }
 

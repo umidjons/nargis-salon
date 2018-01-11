@@ -24,7 +24,6 @@ article {
     }
 
     .description {
-      //background: rgba(255, 41, 209, 0.2);
       background: rgba(255, 255, 255, 0.3);
       color: #000;
       font-size: 24px;
@@ -42,9 +41,32 @@ article {
   }
 }
 
-@media(max-width: 576px){
+@media(max-width: 1200px) {
   article {
-    background: url("~/assets/images/bg7.jpg") repeat-y 0%/100% fixed;
+    background: url("~/assets/images/bg7-700.jpg") repeat-y 0%/100% fixed;
+    min-height: 300px;
+    .content {
+      margin: 10px;
+      h3 {
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description {
+        background: rgba(91, 0, 67, 0.75);
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  article {
+    background: url("~/assets/images/bg7-700.jpg") repeat-y 0%/100% fixed;
     min-height: 300px;
     .content {
       margin: 10px;
@@ -63,5 +85,4 @@ article {
       }
     }
   }
-
 }

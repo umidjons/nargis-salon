@@ -45,9 +45,43 @@ article {
   }
 }
 
+@media(max-width: 1200px) {
+  article {
+    background-image: url("~/assets/images/portfolio-700.jpg");
+    background-position: right top;
+    background-size: cover;
+    min-height: 350px;
+
+    .content {
+      h3 {
+        font-size: 40px;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          background: rgba(31, 1, 74, 0.5);
+          color: #fff;
+          width: 41%;
+          margin: 10px;
+          font-size: 20px;
+          img {
+            width: 100%;
+          }
+          .description-header {
+            font-weight: normal;
+          }
+        }
+      }
+
+    }
+  }
+}
+
 @media(max-width: 576px) {
   article {
-    background: url("~/assets/images/portfolio-700.jpg") repeat-y 0%/100% fixed;
+    //background: url("~/assets/images/portfolio-700.jpg") repeat-y 0%/100% fixed;
     min-height: 200px;
 
     .content {
@@ -77,5 +111,4 @@ article {
 
     }
   }
-
 }
