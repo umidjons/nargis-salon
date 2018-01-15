@@ -1,8 +1,12 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 article {
   background-color: #7b3eff;
   background-size: cover;
-  background: url("~/assets/images/services-full.jpg") no-repeat center center fixed;
-  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url("~/assets/images/services-full.jpg");
+  background-repeat: no-repeat;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -32,13 +36,13 @@ article {
       .description {
         box-sizing: border-box;
         margin: 20px;
-        background: rgba(255, 0, 241, 0.2);
+        background: rgba(255, 255, 255, 0.8);
         font-size: 24px;
         font-family: Lato sans-serif;
         width: 28%;
         display: flex;
         .img {
-          background: rgba(255, 255, 255, 0.5);
+          background: rgba(255, 0, 219, 0.08);
           padding: 20px;
           img {
             width: 130px;
@@ -59,68 +63,26 @@ article {
   }
 }
 
-@media (max-width: 1200px) {
+@include media-breakpoint-down(sm) {
   article {
-    background: url("~/assets/images/bg8-700.jpg") repeat-y 0%/130% fixed;
-    min-height: 200px;
-
-    .content {
-      h3 {
-        font-size: 40px;
-        text-shadow: 2px 2px 3px black;
-      }
-
-      .description-wrapper {
-        margin-bottom: 40px;
-        .description {
-          background: rgba(255, 255, 255, 0.8);
-          margin: 10px;
-          font-size: 18px;
-          width: 47%;
-          .img {
-            background: rgba(255, 0, 219, 0.08);
-            padding: 10px;
-            img {
-              width: 90px;
-              height: 90px;
-            }
-          }
-          .body {
-            padding: 0 10px;
-            color: #000;
-            h4 {
-              color: #000;
-              margin: 10px 0;
-            }
-          }
-        }
-      }
-
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  article {
-    background: url("~/assets/images/bg8-700.jpg") repeat-y 0%/130% fixed;
-    min-height: 200px;
-
+    min-height: 400px;
+    background-image: url("~/assets/images/bg8-700.jpg");
     .content {
       width: 100%;
       h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 32px;
         text-shadow: 2px 2px 3px black;
       }
       .description-wrapper {
         margin-bottom: 40px;
         .description {
-          background: rgba(255, 255, 255, 0.8);
           margin: 5px;
           font-size: 12px;
           width: 90%;
           display: flex;
           .img {
-            background: rgba(255, 0, 219, 0.08);
             padding: 10px;
             img {
               width: 60px;
@@ -139,5 +101,156 @@ article {
       }
     }
   }
+}
 
+@include media-breakpoint-only(sm) {
+  article {
+    min-height: 400px;
+    background-image: url("~/assets/images/bg8-700.jpg");
+    .content {
+      width: 100%;
+      h3 {
+        font-size: 36px;
+        text-shadow: 2px 2px 3px black;
+      }
+      .description-wrapper {
+        .description {
+          font-size: 18px;
+          margin: 10px 0;
+          .img {
+            padding: 15px;
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          .body {
+            padding: 0 15px;
+            color: #000;
+            h4 {
+              color: #000;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  article {
+    min-height: 400px;
+    background-image: url("~/assets/images/bg8-700.jpg");
+    .content {
+      width: 100%;
+      h3 {
+        margin: 20px 0;
+        font-size: 40px;
+        text-shadow: 2px 2px 3px black;
+      }
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          width: 80%;
+          font-size: 20px;
+          margin: 10px;
+          .img {
+            padding: 15px;
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          .body {
+            padding: 0 15px;
+            color: #000;
+            h4 {
+              color: #000;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  article {
+    min-height: 400px;
+    background-image: url("~/assets/images/bg8-full.jpg");
+    .content {
+      width: 100%;
+      h3 {
+        margin: 20px 0;
+        font-size: 48px;
+        text-shadow: 2px 2px 3px black;
+      }
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          width: 45%;
+          font-size: 22px;
+          margin: 10px;
+          .img {
+            padding: 20px;
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .body {
+            padding: 0 15px;
+            color: #000;
+            h4 {
+              color: #000;
+              margin: 10px 0;
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xl) {
+  article {
+    min-height: 700px;
+    background-image: url("~/assets/images/bg8-full.jpg");
+    .content {
+      width: 100%;
+      h3 {
+        margin: 30px 0;
+        font-size: 52px;
+        text-shadow: 2px 2px 3px black;
+      }
+      .description-wrapper {
+        margin-bottom: 60px;
+        .description {
+          width: 45%;
+          margin: 10px;
+          .img {
+            padding: 20px;
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .body {
+            padding: 0 20px;
+            color: #000;
+            h4 {
+              color: #000;
+              margin: 10px 0;
+              font-size: 28px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
 }

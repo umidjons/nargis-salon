@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 article {
   background-color: #ff29d1;
   background-size: cover;
@@ -41,36 +43,14 @@ article {
   }
 }
 
-@media(max-width: 1200px) {
+@include media-breakpoint-down(sm) {
   article {
     background: url("~/assets/images/bg7-700.jpg") repeat-y 0%/100% fixed;
     min-height: 300px;
     .content {
       margin: 10px;
       h3 {
-        font-size: 40px;
-        color: #fff;
-        text-shadow: 2px 2px 3px black;
-      }
-
-      .description {
-        background: rgba(91, 0, 67, 0.75);
-        color: #fff;
-        font-size: 20px;
-        margin: 10px;
-        padding: 20px;
-      }
-    }
-  }
-}
-
-@media(max-width: 576px) {
-  article {
-    background: url("~/assets/images/bg7-700.jpg") repeat-y 0%/100% fixed;
-    min-height: 300px;
-    .content {
-      margin: 10px;
-      h3 {
+        margin: 20px 0;
         font-size: 32px;
         color: #fff;
         text-shadow: 2px 2px 3px black;
@@ -85,4 +65,118 @@ article {
       }
     }
   }
+
 }
+
+@include media-breakpoint-only(sm) {
+  article {
+    background: url("~/assets/images/bg7-700.jpg") repeat-y 0%/100% fixed;
+    min-height: 300px;
+    .content {
+      margin: 10px;
+      h3 {
+        margin: 20px 0;
+        font-size: 36px;
+        color: #fff;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description {
+        background: rgba(91, 0, 67, 0.75);
+        color: #fff;
+        font-size: 18px;
+        margin: 10px;
+        padding: 20px;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-only(md) {
+  article {
+    background-image: url("~/assets/images/bg7-700.jpg"); // repeat-y 10%/100% fixed;
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    .content {
+      margin: 10px;
+      h3 {
+        margin: 20px 0;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description {
+        background: rgba(91, 0, 67, 0.75);
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        padding: 20px;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-only(lg) {
+  article {
+    background-image: url("~/assets/images/bg7-700.jpg"); // repeat-y 10%/100% fixed;
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+    .content {
+      margin: 10px;
+      h3 {
+        margin: 20px 0;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description {
+        background: rgba(91, 0, 67, 0.75);
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        padding: 20px;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-only(xl) {
+  article {
+    background-image: url("~/assets/images/bg7-700.jpg"); // repeat-y 10%/100% fixed;
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+    .content {
+      margin: 10px;
+      h3 {
+        margin: 20px 0;
+        font-size: 48px;
+        color: #fff;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description {
+        background: rgba(91, 0, 67, 0.75);
+        color: #fff;
+        font-size: 24px;
+        margin: 10px;
+        padding: 20px;
+      }
+    }
+  }
+
+}
+
