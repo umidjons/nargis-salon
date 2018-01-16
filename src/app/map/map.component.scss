@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 article {
   background-color: #ebebeb;
   background-size: cover;
@@ -39,34 +41,7 @@ article {
   }
 }
 
-@media(max-width: 1200px) {
-  article {
-    background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
-    min-height: 400px;
-    .content {
-      width: 90%;
-      margin: 10px;
-      padding: 10px;
-
-      h3 {
-        font-size: 32px;
-      }
-      .address {
-        font-size: 16px;
-        td {
-          vertical-align: top;
-          &:first-child {
-            text-align: right;
-            width: 155px;
-          }
-        }
-      }
-    }
-    margin-bottom: 70px;
-  }
-}
-
-@media(max-width: 576px) {
+@include media-breakpoint-down(sm) {
   article {
     background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
     min-height: 300px;
@@ -85,6 +60,110 @@ article {
           &:first-child {
             text-align: right;
             width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  article {
+    background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
+    min-height: 300px;
+    .content {
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+
+      h3 {
+        font-size: 20px;
+      }
+      .address {
+        font-size: 16px;
+        td {
+          vertical-align: top;
+          &:first-child {
+            text-align: right;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  article {
+    background: url("~/assets/images/map-700.png") repeat-y 0%/100% fixed;
+    min-height: 300px;
+    .content {
+      width: 90%;
+      margin: 20px;
+      padding: 10px;
+
+      h3 {
+        font-size: 24px;
+      }
+      .address {
+        font-size: 18px;
+        td {
+          vertical-align: top;
+          &:first-child {
+            text-align: right;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  article {
+    background: url("~/assets/images/map-full.png") repeat-y 0%/100% fixed;
+    min-height: 300px;
+    .content {
+      width: 90%;
+      margin: 20px;
+      padding: 10px;
+
+      h3 {
+        font-size: 40px;
+      }
+      .address {
+        font-size: 24px;
+        td {
+          vertical-align: top;
+          &:first-child {
+            text-align: right;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xl) {
+  article {
+    background: url("~/assets/images/map-full.png") repeat-y 0%/100% fixed;
+    min-height: 300px;
+    .content {
+      width: 90%;
+      margin: 20px;
+      padding: 10px;
+
+      h3 {
+        font-size: 48px;
+      }
+      .address {
+        font-size: 24px;
+        td {
+          vertical-align: top;
+          &:first-child {
+            text-align: right;
+            width: 300px;
           }
         }
       }

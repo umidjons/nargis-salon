@@ -5,55 +5,16 @@
 
     <section class="description-wrapper">
 
-      <section class="description">
+      <section class="description" *ngFor="let item of items">
         <div class="img">
-          <img src="/assets/images/srv6.png" alt="Услуги">
+          <img [src]="'/assets/images/' + item.image" [alt]="item.title">
         </div>
         <div class="body">
-          <h4>Парикмахерская</h4>
-          <p>Мелирование, укладки, стрижка и наращивание волос</p>
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.description }}</p>
         </div>
       </section>
 
-      <section class="description">
-        <div class="img">
-          <img src="/assets/images/srv2.png" alt="Услуги">
-        </div>
-        <div class="body">
-          <h4>Ногтевые услуги</h4>
-          <p>Наращивание ногтей гелем, дизайн, маникюр, шеллак</p>
-        </div>
-      </section>
-
-      <section class="description">
-        <div class="img">
-          <img src="/assets/images/srv3.png" alt="Услуги">
-        </div>
-        <div class="body">
-          <h4>Ресницы и растушевка</h4>
-          <p>Наращивание ресниц, растушёвка</p>
-        </div>
-      </section>
-
-      <section class="description">
-        <div class="img">
-          <img src="/assets/images/srv4.png" alt="Услуги">
-        </div>
-        <div class="body">
-          <h4>Удаление тату</h4>
-          <p>Лазерное удаление тату и растушевка</p>
-        </div>
-      </section>
-
-      <section class="description">
-        <div class="img">
-          <img src="/assets/images/srv1.png" alt="Услуги">
-        </div>
-        <div class="body">
-          <h4>Уход за бородой</h4>
-          <p>Отрастить и стричь бороду, уход за бородой</p>
-        </div>
-      </section>
     </section>
 
   </section>

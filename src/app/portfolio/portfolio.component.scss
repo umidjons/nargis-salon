@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 article {
   background-color: #7b3eff;
   background-size: cover;
@@ -45,47 +47,13 @@ article {
   }
 }
 
-@media(max-width: 1200px) {
+@include media-breakpoint-down(sm) {
   article {
-    background-image: url("~/assets/images/portfolio-700.jpg");
-    background-position: right top;
-    background-size: cover;
-    min-height: 350px;
-
-    .content {
-      h3 {
-        font-size: 40px;
-        text-shadow: 2px 2px 3px black;
-      }
-
-      .description-wrapper {
-        margin-bottom: 40px;
-        .description {
-          background: rgba(31, 1, 74, 0.5);
-          color: #fff;
-          width: 41%;
-          margin: 10px;
-          font-size: 20px;
-          img {
-            width: 100%;
-          }
-          .description-header {
-            font-weight: normal;
-          }
-        }
-      }
-
-    }
-  }
-}
-
-@media(max-width: 576px) {
-  article {
-    //background: url("~/assets/images/portfolio-700.jpg") repeat-y 0%/100% fixed;
     min-height: 200px;
-
     .content {
       h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 32px;
         text-shadow: 2px 2px 3px black;
       }
@@ -103,12 +71,148 @@ article {
             width: 100%;
           }
           .description-header {
-            font-size: 14px;
+            margin: 20px;
+            font-size: 16px;
             font-weight: normal;
           }
         }
       }
+    }
+  }
+}
 
+@include media-breakpoint-only(sm) {
+  article {
+    min-height: 200px;
+    .content {
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 32px;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          background: rgba(31, 1, 74, 0.5);
+          color: #fff;
+          width: 45%;
+          font-size: 24px;
+          margin: 10px;
+          padding: 20px;
+          img {
+            width: 100%;
+          }
+          .description-header {
+            margin: 20px;
+            font-size: 16px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  article {
+    min-height: 200px;
+    .content {
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          background: rgba(31, 1, 74, 0.5);
+          color: #fff;
+          width: 45%;
+          font-size: 24px;
+          margin: 10px;
+          padding: 20px;
+          img {
+            width: 100%;
+          }
+          .description-header {
+            margin: 20px;
+            font-size: 20px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  article {
+    min-height: 200px;
+    .content {
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 48px;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          background: rgba(31, 1, 74, 0.5);
+          color: #fff;
+          width: 30.5%;
+          font-size: 24px;
+          margin: 10px;
+          padding: 20px;
+          img {
+            width: 100%;
+          }
+          .description-header {
+            margin: 20px;
+            font-size: 24px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xl) {
+  article {
+    min-height: 500px;
+    .content {
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 52px;
+        text-shadow: 2px 2px 3px black;
+      }
+
+      .description-wrapper {
+        margin-bottom: 40px;
+        .description {
+          background: rgba(31, 1, 74, 0.5);
+          color: #fff;
+          width: 22.5%;
+          font-size: 24px;
+          margin: 10px;
+          padding: 20px;
+          img {
+            width: 100%;
+          }
+          .description-header {
+            margin: 20px;
+            font-size: 24px;
+            font-weight: normal;
+          }
+        }
+      }
     }
   }
 }
