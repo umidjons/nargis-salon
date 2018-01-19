@@ -13,9 +13,6 @@ interface IInstaItem {
 })
 export class InstagramComponent implements OnInit {
 
-  readonly userName: string = 'beauty_nargis_salon';
-  readonly instagramBaseURL = 'https://www.instagram.com/p/';
-
   items: IInstaItem[];
 
   constructor(private http: HttpClient) {
@@ -28,28 +25,12 @@ export class InstagramComponent implements OnInit {
   async getItems() {
     this.items = [];
 
-    const query = `select * from json where url='https://www.instagram.com/${this.userName}/?__a=1'`;
-
-    const qs = `?q=${query}&format=json&_${this.userName}`;
-    this.http.get('https://query.yahooapis.com/v1/public/yql' + qs).subscribe(resp => {
+    this.http.get('/insta_feeds.json').subscribe(resp => {
       console.log('Response:', resp);
-      if (resp['query']['results']) {
-        this.items = this.normalizeItems(resp['query']['results']['json']['user']['media']['nodes']);
+      if (resp) {
+        this.items = <IInstaItem[]>resp;
       }
     });
-  }
-
-  normalizeItems(nodes) {
-    const items: IInstaItem[] = [];
-
-    for (const node of nodes) {
-      items.push({
-        href: `${this.instagramBaseURL}${node.code}`,
-        thumbnail_src: node.thumbnail_src
-      });
-    }
-
-    return items;
   }
 
 }
