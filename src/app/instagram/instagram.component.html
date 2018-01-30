@@ -5,12 +5,13 @@
 
     <section class="description-wrapper">
 
-      <section class="description" *ngFor="let item of items">
+      <section class="description" *ngFor="let item of items"
+               itemscope itemtype="http://schema.org/Thing">
         <a [href]="item.href" target="_blank">
           <img class="img-thumbnail"
                [src]="item.thumbnail_src"
-               [alt]="item.title">
-          <h4 class="description-header">{{ item.title }}</h4>
+               [alt]="item.title" itemprop="image">
+          <h4 class="description-header" itemprop="name">{{ item.title }}</h4>
         </a>
       </section>
 

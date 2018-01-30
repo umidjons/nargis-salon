@@ -5,13 +5,14 @@
 
     <section class="description-wrapper">
 
-      <section class="description" *ngFor="let item of items">
+      <section class="description" *ngFor="let item of items"
+               itemscope itemtype="http://schema.org/Service">
         <div class="img">
-          <img [src]="'/assets/images/' + item.image" [alt]="item.title">
+          <img itemprop="logo" [src]="'/assets/images/' + item.image" [alt]="item.title">
         </div>
         <div class="body">
-          <h4>{{ item.title }}</h4>
-          <p>{{ item.description }}</p>
+          <h4 itemprop="name">{{ item.title }}</h4>
+          <p itemprop="descrition">{{ item.description }}</p>
         </div>
       </section>
 
